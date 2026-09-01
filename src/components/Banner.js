@@ -14,12 +14,14 @@ export const Banner = () => {
   const period = 2000;
 
   useEffect(() => {
-    const ticker = setInterval(() => {
-      tick();
-    }, delta);
+  const ticker = setInterval(() => {
+    tick();
+  }, delta);
 
-    return () => clearInterval(ticker);
-  }, [text, delta]);
+  return () => clearInterval(ticker);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [text, delta]);
 
   const tick = () => {
     const i = loopNum % toRotate.length;

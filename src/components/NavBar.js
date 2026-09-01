@@ -39,8 +39,8 @@ export const NavBar=()=>{
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href="https://github.com/srashtiverma08"><img src={icons8Github} alt="" /></a>
-                <a href="https://www.linkedin.com/in/srashti-verma-403989258?utm_source=share_via&utm_content=profile&utm_medium=member_android"><img src={icon8Linkedin} alt="" /></a>
+                <a href="https://github.com/srashtiverma08"><img src={icons8Github} alt="giticon" /></a>
+                <a href="https://www.linkedin.com/in/srashti-verma-403989258?utm_source=share_via&utm_content=profile&utm_medium=member_android"><img src={icon8Linkedin} alt="linkicon" /></a>
             </div>
             <button className="vvd"  onClick={()=>console.log('connect')}><span><a className="connectbut" href="#connect">Let's connect</a></span></button>
           </span>
