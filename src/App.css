@@ -75,17 +75,17 @@ input:focus, textarea:focus, select:focus {
 }
 @media (max-width: 767px) {
   .banner h1 {
-    font-size: 32px;
+    font-size: 25px !important;
     line-height: 1.25;
   }
 
   .banner p {
-    font-size: 15px;
+    font-size: 15px !important;
     line-height: 1.6;
   }
 
   .togline {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .logo{
     width: 100% !important;
@@ -96,19 +96,19 @@ input:focus, textarea:focus, select:focus {
   }
 
   #edu-card h3 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   #edu-card h4 {
-    font-size: 16px;
+    font-size: 14px !important;
   }
 
   #edu-card p {
-    font-size: 13px;
+    font-size: 13px !important;
   }
-  #edu-card .card-title { font-size: 20px; }
-   #edu-card .card-subtitle { font-size: 14px; } 
-   #edu-card .card-text { font-size: 13px; line-height: 1.5; }
+  #edu-card .card-title { font-size: 18px !important; }
+   #edu-card .card-subtitle { font-size: 14px !important; } 
+   #edu-card .card-text { font-size: 13px !important; line-height: 1.5; }
 
    .row-connect h4 button {
     font-size: 14px;
@@ -121,58 +121,23 @@ input:focus, textarea:focus, select:focus {
   display: flex;
   align-items: center;
 }
-.social-icon a::before {
-    content: "";
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 50%;
-    transform: scale(0);
-	transition: 0.3s ease-in-out;
-}
-.social-icon a:hover::before {
-    transform: scale(1);
-}
-.social-icon a img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  z-index: 1;
-  transition: 0.3s ease-in-out;
-}
+@media (max-width: 767px) {
 
-/* GitHub white */
-/* GitHub - White */
-.social-icon a:first-child img {
-  filter: brightness(0) invert(1);
-}
+  .social-icon a::before {
+    width: 32px !important;
+    height: 32px !important;
+  }
 
-/* LinkedIn - Original Blue */
-.social-icon a:nth-child(2) img {
-  filter: none;
-}
+  .social-icon a img {
+    width: 30px !important;
+    height: 30px !important;
+  }
 
-/* GitHub Hover */
-.social-icon a:first-child:hover img {
-  filter: brightness(0);
-}
+  .social-icon a:nth-child(2) {
+    padding: 5px !important;
+  }
 
-/* LinkedIn Hover - Blue remains */
-.social-icon a:nth-child(2):hover img {
-  filter: none !important;
 }
-
-/* LinkedIn Circle */
-.social-icon a:nth-child(2) {
-  border-radius: 50%;
-  padding: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-  
 
 }
 p.success {
