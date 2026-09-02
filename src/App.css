@@ -73,7 +73,7 @@ input:focus, textarea:focus, select:focus {
 		padding: 0 150px;
 	}
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .banner h1 {
     font-size: 32px;
     line-height: 1.25;
