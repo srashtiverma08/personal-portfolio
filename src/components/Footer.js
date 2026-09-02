@@ -13,7 +13,7 @@ export const Footer = ()=>{
                 <Col sm={6} className="text-center text-sm-end">
                     <div className="social-icon">
                         <a href="https://github.com/srashtiverma08"><img src={icons8github} alt="giticon" /></a>
-                        <a href="https://www.linkedin.com/in/srashti-verma-403989258?utm_source=share_via&utm_content=profile&utm_medium=member_android"><img src={icons8linkedin} alt="linkicon"/></a>
+                        <a href="https://www.linkedin.com/in/srashti-verma-403989258"><img src={icons8linkedin} alt="linkicon"/></a>
                         
                     </div>
                     <p>CopyRight 2026. All Right Reserved. Created with Clean Code.</p>
