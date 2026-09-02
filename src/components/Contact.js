@@ -20,24 +20,43 @@ export const Contact = ()=>{
         })
     }
     const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+  e.preventDefault();
+  setButtonText("Sending...");
+
+  try {
+    const response = await fetch("/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(formDetails),
     });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
+
+    const result = await response.json();
+
     if (result.code === 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
+      setStatus({
+        success: true,
+        message: "Message sent successfully",
+      });
+      setFormDetails(formInitialDetails);
     } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+      setStatus({
+        success: false,
+        message: "Something went wrong, please try again later.",
+      });
     }
-  };
+  } catch (error) {
+    console.error("Contact form error:", error);
+
+    setStatus({
+      success: false,
+      message: "Unable to send message. Please try again later.",
+    });
+  } finally {
+    setButtonText("Send");
+  }
+};
     return(
         <section className="contact" id="connect">
             <Container>
