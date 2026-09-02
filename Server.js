@@ -33,6 +33,7 @@ app.post("/contact", async (req, res) => {
   const mail = {
     from: process.env.EMAIL_USER,
     to: "srashtiverma08@gmail.com",
+    replyTo: email,
     subject: "Contact Form Submission - Portfolio",
 
     html: `
