@@ -73,7 +73,57 @@ input:focus, textarea:focus, select:focus {
 		padding: 0 150px;
 	}
 }
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
 
+  .banner p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .togline {
+    font-size: 14px;
+  }
+  .logo{
+    width: 100% !important;
+    
+  }
+   #edu-card {
+    padding: 12px;
+  }
+
+  #edu-card h3 {
+    font-size: 16px;
+  }
+
+  #edu-card h4 {
+    font-size: 16px;
+  }
+
+  #edu-card p {
+    font-size: 13px;
+  }
+  #edu-card .card-title { font-size: 20px; }
+   #edu-card .card-subtitle { font-size: 14px; } 
+   #edu-card .card-text { font-size: 13px; line-height: 1.5; }
+
+   .row-connect h4 button {
+    font-size: 14px;
+    padding: 12px;
+    width: 60%;
+  }
+  footer .logo{
+  width: 20% !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+  
+
+}
 p.success {
 	color: green;
 }
@@ -521,6 +571,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: all 0.3s ease;
 }
 
+#cardd .card-body {
+  padding: 25px;
+}
+
+#cardd .card-title,
+#cardd .card-subtitle,
+#cardd .card-text,
+#cardd .card-footer {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#cardd .card-text {
+  text-align: left;
+  line-height: 1.6;
+}
+
+#cardd .card-footer {
+  margin-top: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  border: none;
+}
+
+/* Hover */
 #cardd:hover {
   background-color: #272626;
   color: #fff;
@@ -534,11 +610,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 #cardd:hover .card-footer {
   color: #fff !important;
 }
-#card-row{
+
+#card-row {
   margin: 20px;
   padding-bottom: 50px;
 }
 
+/* Both cards same height */
+#card-row .card {
+  height: 100%;
+}
+
+#card-row .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#card-row .card-text {
+  flex-grow: 1;
+}
+
+#card-row .card-footer {
+  margin-top: auto;
+}
 
 
 /************ Projects Css ************/
@@ -557,21 +651,56 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 20px;
 }
 #edu-card {
+
   margin-bottom: 50px;
+
   padding: 20px;
+
   background: #f1f1f1;
+
   box-shadow: 0 6px 8px rgba(255, 255, 255, 0.25);
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 #edu-card:hover {
+
   background: linear-gradient(90.21deg, #915a7b -5.91%, #5847a5 111.58%);
+
   color: white;
+
   transform: translateY(-8px) scale(1.02);
+
   transition: all 0.3s ease;
+
 }
+
 #edu-card:hover .text-muted {
+
   color: white !important;
+
+}
+
+
+/* Experience card text */
+
+#edu-card .card-body {
+
+  padding: 20px;
+
+}
+
+#edu-card .card-text {
+
+  margin: 0;
+
+  padding: 0;
+
+  text-align: left;
+
+  line-height: 1.6;
+
 }
 .contact {
   background: linear-gradient(90.21deg, #915a7b -5.91%, #5847a5 111.58%);
@@ -655,7 +784,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 0 6px 15px rgba(255, 255, 255, 0.25);
-  width: 70%;
+  width: 80%;
   text-align: left;
 }
 /************ Footer Css ************/

@@ -6,31 +6,7 @@ export const Education = () => {
     <section className="education" id="education"> 
       <Container className="edu-cont">
         <Row className="g-5" id="edu-row">
-
-          {/* Education */}
-          <Col xs={12} md={6}>
-            <h2>Education</h2>
-
-            <Card className="w-100" id="edu-card">
-              <Card.Body>
-                <Card.Title>Master's of Computer Application</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Amrapali University (2024-2026)
-                </Card.Subtitle>
-              </Card.Body>
-            </Card>
-
-            <Card className="w-100 mt-4" id="edu-card">
-              <Card.Body>
-                <Card.Title>Bachelor's of Computer Application</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Kumaun University (2021-2024)
-                </Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          {/* Experience */}
+            {/* Experience */}
           <Col xs={12} md={6}>
             <h2>Experience</h2>
 
@@ -54,6 +30,30 @@ export const Education = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* Education */}
+          <Col xs={12} md={6}>
+            <h2>Education</h2>
+
+            <Card className="w-100" id="edu-card">
+              <Card.Body>
+                <Card.Title>Master's of Computer Application</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Amrapali University (2024-2026)
+                </Card.Subtitle>
+              </Card.Body>
+            </Card>
+
+            <Card className="w-100 mt-4" id="edu-card">
+              <Card.Body>
+                <Card.Title>Bachelor's of Computer Application</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Kumaun University (2021-2024)
+                </Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          
 
         </Row>
       </Container>
