@@ -16,7 +16,7 @@ export const Footer = ()=>{
                         <a href="https://www.linkedin.com/in/srashti-verma-403989258"><img src={icons8linkedin} alt="linkicon"/></a>
                         
                     </div>
-                    <p>CopyRight 2026. All Right Reserved. Created with Clean Code.</p>
+                    <p>CopyRight 2026 Portfolio - Srashti Verma All Rights Reserved. Built with Clean Code.</p>
                 </Col>
             </Row>
             </Container>
